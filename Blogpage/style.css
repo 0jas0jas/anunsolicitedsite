@@ -237,7 +237,8 @@ main{
 
 .post:hover>.details>p{
   text-decoration: underline;
-  text-decoration-thickness: 5px;  
+  text-decoration-thickness: 5px;
+  text-decoration-skip-ink: auto;  
 }
 
 .container{

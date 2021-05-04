@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    overflow-x:hidden;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: cornsilk;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+#navbar{
+    position: fixed;
+    background-color:transparent;
+}
+
+header{
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+
+.logo{
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+
+}
+
+.nav__links {
+    list-style: none;
+    margin-top: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.nav__links li {
+    display:inline-block;
+    padding: 0 20px;
+
+}
+
+.nav__links li a{
+    transition: all 0.2s ease-in 0s;
+    text-decoration: none;
+    color: white;
+    opacity: 0.75;
+}
+
+.nav__links li a:hover{
+    opacity: 1;
+    font-size:18px
+}
+
+.aboutbtn{
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8) !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease 0s;
+    color:#edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.aboutbtn span{
+    display: block;
+    padding: 8px 22px;
+}
+
+.about{
+    border-radius: 50px;
+}
+
+.aboutbtn:hover {
+
+    background-color: rgba(0, 117, 146, 0.8);
+
+}
+
+.frontimage {
+
+    /* The image used */
+    background-image: url("gradientBG.jpg");
+    
+  
+    /* Positioning */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    transform: scale(1.1); 
+
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index:0;
+
+  }
+
+#fronttext{
+    position: absolute;
+    text-align:right;
+    padding: 25px 50px 25px 50px;
+    top:50%;
+    left: 70%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    filter:none;
+    z-index:1;
+    font-family: 'open sans';
+    color:whitesmoke;
+    z-index: 0;
+}
+
+.app-text{
+    float: right;
+}
+
+.app-text h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin-left: 40px;
+}
+
+.app-text p{
+    font-size: 1.5rem;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.play-btn-inner{
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8) !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease 0s;
+    color:#edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.play-btn-inner .fa-play{
+    width: 100%;
+    height: 100%;
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.social-icons{
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    position: fixed;
+    transition: all 300ms ease 0s;
+}
+
+.social-icons ul li{
+    list-style:none;
+    margin-top: 15px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #999;
+}
+
+
+
+.social-icons .svg-inline--fa{
+    height: 75%;
+    width: 70%;
+}
+
+.rightFade{
+    opacity: 0;
+    transform: translateX(50%); 
+    transition: opacity 400ms ease-in, transform 500ms ease-in;
+}
+
+.leftFade{
+    opacity: 0;
+    transform: translateX(-50%); 
+    transition: opacity 400ms ease-in, transform 500ms ease-in;
+}
+
+.leftFade.appear, .rightFade.appear{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#scrolled_navbar{
+    position: fixed;
+    background-color:#42455A;
+    top: 0%;
+    width: 100%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    opacity: 1;
+    transition: all 300ms ease-in 0s;
+}
+
+#scrolled_navbar.disappear{
+    opacity: 0;
+}
+
+#intro{
+    position: relative;
+    text-align:center;
+    margin: 50px;
+    padding: 50px;
+    opacity: 1;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+
+}
+
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear{
+    opacity:1;
+}
+
+.Ojas{
+    border-style:solid;
+    border-width: 10px;
+    width: 75%;
+    font-size: 6em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.creator{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bio{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.line{
+    border-style: solid;
+    width: 100%;
+    border-width: 10px;
+}
+
+#frontimagedivider{
+    height: 30px !important;
+    fill:black !important;
+    opacity: 1 !important;
+    position: relative;
+    width: 100%
+
+}
+
+#skillsdivider{
+    height: 15px;
+    fill:black !important;
+    opacity: 1 !important;
+    position: relative;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.skills{
+    font-size: 1.5em;
+    font-family: 'Krona One', sans-serif;
+}
+
+.progressImages{
+    position: relative;
+    height:50%;
+    width: 75%;
+}
+
+.dashed{
+    border: dashed 5px #41403e;
+    align-self: center;
+	 background: transparent;
+	 padding: 1rem 1rem;
+	 margin: 0 1rem;
+	 transition: all 0.5s ease;
+	 color: #41403e;
+	 font-size: 2rem;
+	 letter-spacing: 1px;
+	 outline: none;
+	 box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, .2);
+	 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.dashed:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+}
+
+.footer{
+    background-color:#000;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 50px 25px 50px;
+    font-family: Times;
+    color:#edf0f1;
+}
+
+.OjasCreate{
+    color: #888;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+

@@ -213,6 +213,9 @@ main{
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 20px;
   grid-gap: 40px;
+  width: 75%;
+  height: 75%;
+  padding-bottom: 100px;
 }
 
 .post{
@@ -220,7 +223,7 @@ main{
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
   width: 100%;
-  transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s; 
 }
 
 .post:hover{
@@ -231,9 +234,6 @@ main{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
-.post:hover>.details>h3{
-  font-size: 22px;
-}
 
 .post:hover>.details>p{
   text-decoration: underline;

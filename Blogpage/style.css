@@ -238,7 +238,7 @@ main{
 .post:hover>.details>p{
   text-decoration: underline;
   text-decoration-thickness: 5px;
-  text-decoration-skip-ink: none;  
+  text-decoration-skip-ink: auto;  
 }
 
 .container{
@@ -355,6 +355,10 @@ img{
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -374,7 +378,7 @@ img{
   }
 
   main {
-    margin: 0;
+    margin: -20px;
   }
 
   .input-button{
@@ -383,6 +387,20 @@ img{
     left: 0;
     width: 50%;
 
+  }
+  .heading{
+    flex-direction: column;
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+  .input-button{
+    z-index: auto;
+  }
+  hr{
+    display: none;
+  }
+  .input-text{
+    width: 100%;
   }
 }
 

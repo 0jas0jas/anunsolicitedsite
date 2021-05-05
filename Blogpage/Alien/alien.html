@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="terminal-solid.svg">
+    <title>The Matrix.</title>
     <style>
         body{
             background-color: black;
+            color: #00fa00;
+            font-family: monospace;
+            margin: 0;
+            font-size: 10px;
+        }
+
+        .container{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            
+        }
+
+        .container h1{
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: type 3s steps(50, end), caret-blink .8s ease infinite;
+            border-right: 10px solid #00fa00;
+        }
+
+        @keyframes type{
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 100%;
+            }
+        }
+
+        @keyframes caret-blink{
+            0%{
+                border-color: transparent;
+
+            }
+            50%{
+                border-color: #00fa00;
+            }
+            100%{
+                border-color: transparent;
+            }
         }
     </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Wake up, Neo...</h1>
+    </div>
 </body>
 </html>

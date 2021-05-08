@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body{
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 
@@ -45,7 +46,7 @@ header{
 
 }
 
-li, a{
+a{
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -58,6 +59,31 @@ li, a{
     color: white;
     font-size: 19px;
 
+}
+
+.logo a{
+    color: #edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.logo a:link{
+    color: #edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.logo a:active{
+    color: #edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.logo a:hover{
+    color: #edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.logo a:visited{
+    color: #edf0f1 !important;
+    text-decoration: none !important;
 }
 
 .nav__links {
@@ -102,9 +128,6 @@ li, a{
     padding: 8px 22px;
 }
 
-.about{
-    border-radius: 50px;
-}
 
 .aboutbtn:hover {
 
@@ -115,13 +138,15 @@ li, a{
 .frontimage {
 
     /* The image used */
-    background-image: url("jr-korpa-9XngoIpxcEo-unsplash.jpg");
+    background-image: url("fakurian-arts-u8Jn2rzYIps-unsplash.jpg");
+    
   
     /* Positioning */
     width: 100%;
     height: 100vh;
     background-size: cover;
     position: relative;
+    transform: scale(1.1); 
 
   
     /* Center and scale the image nicely */
@@ -150,23 +175,19 @@ li, a{
 
 .app-text{
     float: right;
-    padding: 50px 50px 50px 0px;
-    border-radius: 30px;
-    /* background:#00000055; */
 }
 
 .app-text h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     margin-left: 40px;
-
 }
 
 .app-text p{
     font-size: 1.5rem;
     margin: 30px 0 30px 40px;
     line-height: 25px;
-    color: white;
+    color: #919191;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -242,7 +263,7 @@ li, a{
 
 #scrolled_navbar{
     position: fixed;
-    background-color:#42455A;
+    background-color:#513A8C;
     top: 0%;
     width: 100%;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -256,7 +277,7 @@ li, a{
     opacity: 0;
 }
 
-#intro{
+.intro{
     position: relative;
     text-align:center;
     margin: 50px;
@@ -306,8 +327,8 @@ li, a{
     fill:black !important;
     opacity: 1 !important;
     position: relative;
-    width: 100%
-
+    width: 100%;
+    top: 30px !important;
 }
 
 #skillsdivider{
@@ -320,14 +341,16 @@ li, a{
 }
 
 .skills{
+    border: #000 solid 3px;
     font-size: 1.5em;
     font-family: 'Krona One', sans-serif;
+    padding: 15px 15px 15px 15px
 }
 
 .progressImages{
     position: relative;
     height:50%;
-    width: 75%;
+    width: 100%;
 }
 
 .dashed{
@@ -366,78 +389,127 @@ li, a{
     left: 10%;
 }
 
-.fa-bars{
-    width: 50px;
-    height: 50px;
-    top: 5%;
-    left: 10%;
-    z-index: 2;
-    position: absolute;
+.list{
+    float: left;
 }
 
-.phones{
-    width:100%;
-    position: absolute;
-    z-index: 3;
-    height: 100vh;
-    background-color: aliceblue;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
+.about{
+    margin-left: -30%;
+    text-align: left;
 }
 
-#cross-btn:hover{
-    cursor: pointer;
+.non-about{
+    margin-left: -30%;
+    text-align: left;
 }
 
-.openMenu:hover{
-    cursor: pointer;
-}
-
-.phoneNav{
-    text-align: center;
-    align-self: center;
-}
-
-.phoneNav ul{
-    line-height: 45px;
-}
-
-.phoneNav a{
+.non-about li{
     color: black;
-    text-decoration: none;
+    list-style-type: '❌';
+    font-size: 25px;
+}
+
+.about li{
+    color: black;
+    list-style-type: '✔';
     font-size: 25px;
     
 }
 
-.fa-times-circle{
-    height: 50px;
-    width: 50px;
+.about li:hover{
+    list-style-type: '🤯';
+}
+
+.non-about li:hover{
+    list-style-type: '☹';
+}
+
+.chair img{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    z-index: -1;
+    top: 25%;
+    left: 50%;
+    height: 75%;
 }
 
-.phoneNav li{
-    padding: 25px 10px 25px 10px;
-    border: black solid 3px;
+
+.hell{
+    font-size: 75px;
+    animation: moving 6s linear infinite;
+    position: absolute;
+    width: 1px;
 }
 
-@media only screen and (max-width: 600px){
-    #navbar{
-        display: none;
-    }
-    .app-text{
-        text-align: left;
-    }
-    .app-text h1{
-        font-size: 30px;
-    }
-    .app-text p{
-        font-size: 14px;
-    }
-    #fronttext{
-        width: 100%;
+@keyframes moving{
+    0%{
+        left:-1300px;
     }
 
+    100%{
+        left: 100%;
+    }
 }
+
+.contact{
+    border: dashed 5px #41403e;
+    align-self: center;
+	 background: transparent;
+	 padding: 1rem 1rem;
+	 margin: 0 1rem;
+	 transition: all 0.5s ease;
+	 color: #41403e;
+	 font-size: 2rem;
+	 letter-spacing: 1px;
+	 outline: none;
+	 box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, .2);
+	 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    height: 50vh;
+    font-family: 'Itim', cursive;
+}
+
+.lined.thick {
+    border: solid 7px #41403e;
+}
+
+.lined.thick:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+}
+
+.lined.thick{
+    align-self: center;
+    background: transparent;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    transition: all 0.5s ease;
+    color: #41403e;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, .2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.contact:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+}
+
+.group{
+    display: flex;
+    position: relative;
+    
+}
+
+.group svg{
+    width: 75px;
+    height: 100px;
+}
+
+#email{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+#discord{
+    margin-left: 1000px;
+}
+

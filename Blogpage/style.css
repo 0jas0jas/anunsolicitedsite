@@ -377,7 +377,7 @@ img{
   }
 
   main {
-    margin: -20px;
+    margin-left: -20%;
   }
 
   .input-button{
@@ -400,6 +400,14 @@ img{
   }
   .input-text{
     width: 100%;
+  }
+
+  .post{
+    width: 75%;
+  }
+
+  .posts{
+    padding-bottom: 200px;
   }
 }
 

@@ -5,14 +5,12 @@ const faders = document.querySelectorAll(".fade-in")
 const sliders = document.querySelectorAll(".slider");
 const footer = document.querySelector(".footer")
 
-
-
 //NAVBAR DISAPPEARS
 frontimageObserverOptions = {
   rootMargin: "-800px 0px 0px 0px"
 
 };
- 
+
 const frontimageObserver = new IntersectionObserver(function(enteries, frontimageObserver){
   enteries.forEach(entry => {
     if(!entry.isIntersecting){
@@ -68,13 +66,4 @@ const navGone = new IntersectionObserver(function(entries, navGone){
   })
 })
 
-
-const openMenu = document.querySelector('.openMenu')
-const crossBtn = document.querySelector('#cross-btn')
-openMenu.addEventListener('click', function(){
-  $('.phones').css("display", "flex");
-})
-
-crossBtn.addEventListener('click', function(){
-  $('.phones').css("display", "none");
-})
+navGone.observe(footer);

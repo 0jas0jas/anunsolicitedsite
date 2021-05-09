@@ -390,6 +390,10 @@ li, a{
     cursor: pointer;
 }
 
+.openMenu{
+    display: none;
+}
+
 .openMenu:hover{
     cursor: pointer;
 }
@@ -438,6 +442,9 @@ li, a{
     }
     #fronttext{
         width: 100%;
+    }
+    .openMenu{
+        display: block;
     }
 
 }

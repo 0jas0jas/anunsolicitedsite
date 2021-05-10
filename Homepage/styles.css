@@ -427,7 +427,7 @@ li, a{
     border: black solid 3px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width : 667px){
     #navbar{
         display: none;
     }
@@ -447,4 +447,25 @@ li, a{
         display: block;
     }
 
+}
+
+@media (max-width : 375px) {
+    #navbar{
+        display: none;
+    }
+    .app-text{
+        text-align: left;
+    }
+    .app-text h1{
+        font-size: 30px;
+    }
+    .app-text p{
+        font-size: 14px;
+    }
+    #fronttext{
+        width: 100%;
+    }
+    .openMenu{
+        display: block;
+    }
 }

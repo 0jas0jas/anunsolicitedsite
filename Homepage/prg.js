@@ -23,7 +23,6 @@ const frontimageObserver = new IntersectionObserver(function(enteries, frontimag
   })
 }, frontimageObserverOptions)
 
-frontimageObserver.observe(frontimage)
 
 
 

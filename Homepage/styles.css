@@ -240,21 +240,6 @@ li, a{
 }
 
 
-#scrolled_navbar{
-    position: fixed;
-    background-color:#42455A;
-    top: 0%;
-    width: 100%;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    opacity: 1;
-    transition: all 300ms ease-in 0s;
-}
-
-#scrolled_navbar.disappear{
-    opacity: 0;
-}
 
 #intro{
     position: relative;
@@ -427,12 +412,16 @@ li, a{
     border: black solid 3px;
 }
 
-@media only screen and (max-width : 667px){
+
+
+@media (max-width: 768px) {
+
     #navbar{
         display: none;
     }
     .app-text{
         text-align: left;
+        margin-right: 100px;
     }
     .app-text h1{
         font-size: 30px;
@@ -449,23 +438,3 @@ li, a{
 
 }
 
-@media (max-width : 375px) {
-    #navbar{
-        display: none;
-    }
-    .app-text{
-        text-align: left;
-    }
-    .app-text h1{
-        font-size: 30px;
-    }
-    .app-text p{
-        font-size: 14px;
-    }
-    #fronttext{
-        width: 100%;
-    }
-    .openMenu{
-        display: block;
-    }
-}

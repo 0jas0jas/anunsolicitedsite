@@ -575,9 +575,7 @@ a{
     border: black solid 3px;
 }
 
-@media only screen 
-and (min-width : 375px) 
-and (max-width : 667px){
+@media only screen and (max-width : 786px){
     body{
         overflow-x: hidden;
     }
@@ -599,6 +597,32 @@ and (max-width : 667px){
     }
     .openMenu{
         display: block;
+    }
+    .Ojas{
+        border: none;
+        margin: 0;
+        width: 100%;
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+
+    
+    #email{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #discord{
+        margin-left: 0;
+    }
+
+    #scrolled_navbar{
+        display: none;
+    }
+
+    .footer{
+        justify-content: space-evenly;
+        padding: 10px 20px 5px 20px;
     }
 
 }

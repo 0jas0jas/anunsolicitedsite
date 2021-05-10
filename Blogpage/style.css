@@ -53,6 +53,7 @@ a:active {
 
 
 body {
+  overflow-x: hidden;
   color: black;
   margin: 0;
   padding: 0;
@@ -362,6 +363,11 @@ img{
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    position: fixed;
+  }
+
+  .red-pill{
+    display: none;
   }
 
   .logo {
@@ -377,7 +383,7 @@ img{
   }
 
   main {
-    margin-left: -20%;
+    margin-left: -15%;
   }
 
   .input-button{
@@ -404,10 +410,13 @@ img{
 
   .post{
     width: 75%;
+    align-items: center;
+    align-self: center;
   }
 
   .posts{
     padding-bottom: 200px;
+    align-items: center;
   }
 }
 
@@ -417,6 +426,7 @@ img{
     top: 0;
     width: 5rem;
     height: 100vh;
+  
   }
 
   .navbar:hover {

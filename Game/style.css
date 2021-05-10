@@ -1,0 +1,62 @@
+body{
+    background-color: skyblue;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+#character{
+    position:relative;
+    top: 105px;
+}
+
+#character img{
+    width: 75.5px;
+    height: 93.5px;
+
+}
+
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 100px;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 100px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 80px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

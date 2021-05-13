@@ -67,3 +67,14 @@ const navGone = new IntersectionObserver(function(entries, navGone){
 })
 
 navGone.observe(footer);
+
+
+const openMenu = document.querySelector('.openMenu')
+const crossBtn = document.querySelector('#cross-btn')
+openMenu.addEventListener('click', function(){
+  $('.phones').css("display", "flex");
+})
+
+crossBtn.addEventListener('click', function(){
+  $('.phones').css("display", "none");
+})

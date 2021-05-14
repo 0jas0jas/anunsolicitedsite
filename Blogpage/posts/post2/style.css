@@ -383,6 +383,20 @@ img{
 
 }
 
+.main h1{
+  font-weight: 1500;
+}
+
+.main p{
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.main h2{
+  font-weight: 700;
+}
+
+
 .main img{
   left: 50%;
   position: relative;

@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /About/tick.png
+Disallow: /About/secretImage.jpg
+
+#Oh hey! You're here. I can disallow pages and images like above so google won't see them. DON'T YOU DARE LOOK AT THAT IMAGE!

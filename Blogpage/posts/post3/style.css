@@ -455,6 +455,10 @@ img{
   #old-terminal{
     margin-left: -10%;
   }
+
+  #disqus_thread{
+    top: 30%;
+  }
 }
 
 /* Large screens */

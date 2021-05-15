@@ -32,7 +32,7 @@ function runMatter() {
     options: {
       width: dimensions.width,
       height: dimensions.height,
-      wireframes: false,
+      wireframes: true,
       background: 'rgb(240,240,240)' } });
 
 Render.run(render);
@@ -45,6 +45,7 @@ Render.run(render);
   var world = engine.world;
   engine.world.gravity.y = 0.3;
   engine.world.gravity.x = 0;
+
 
     // add bodies
     var stack = Composites.stack(20, 20, 20, 5, 0, 0, function(x, y) {
@@ -111,8 +112,8 @@ function setWindowSize() {
   dimensions.width = $(window).width() / 1.5;
   dimensions.height = $(window).height() / 1;
 
-  m.render.canvas.width = $(window).width();
-  m.render.canvas.height = $(window).height();
+  m.render.canvas.width = $(window).width() / 1.5;
+  m.render.canvas.height = $(window).height() / 1;
   return dimensions;
 }
 

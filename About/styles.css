@@ -49,40 +49,40 @@ header{
 a{
     font-weight: 500;
     font-size: 16px;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 
 .logo{
     cursor: pointer;
-    color: black;
+    color: white;
     font-size: 19px;
 
 }
 
 .logo a{
-    color: black !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
 .logo a:link{
-    color: black !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
 .logo a:active{
-    color: black !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
 .logo a:hover{
-    color: black !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
 .logo a:visited{
-    color: black !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
@@ -102,7 +102,7 @@ a{
 .nav__links li a{
     transition: all 0.2s ease-in 0s;
     text-decoration: none;
-    color: black;
+    color: white;
     opacity: 0.75;
 }
 
@@ -139,7 +139,7 @@ a{
 
     /* The image used */
     /* background-image: url("fakurian-arts-u8Jn2rzYIps-unsplash.jpg"); */
-    
+    background-color: #0F0F13;
   
     /* Positioning */
     width: 100%;
@@ -169,7 +169,7 @@ a{
     filter:none;
     z-index:1;
     font-family: 'open sans';
-    color:black;
+    color:white;
     z-index: 0;
 }
 
@@ -263,7 +263,7 @@ a{
 
 #scrolled_navbar{
     position: fixed;
-    background-color:#513A8C;
+    background-color:black;
     top: 0%;
     width: 100%;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -272,6 +272,7 @@ a{
     opacity: 1;
     transition: all 300ms ease-in 0s;
 }
+
 
 #scrolled_navbar.disappear{
     opacity: 0;

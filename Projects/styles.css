@@ -67,33 +67,33 @@ a{
 
 .logo{
     cursor: pointer;
-    color: white;
+    color: black;
     font-size: 19px;
 
 }
 
 .logo a{
-    color: #edf0f1 !important;
+    color: black !important;
     text-decoration: none !important;
 }
 
 .logo a:link{
-    color: #edf0f1 !important;
+    color: black !important;
     text-decoration: none !important;
 }
 
 .logo a:active{
-    color: #edf0f1 !important;
+    color: black !important;
     text-decoration: none !important;
 }
 
 .logo a:hover{
-    color: #edf0f1 !important;
+    color: black !important;
     text-decoration: none !important;
 }
 
 .logo a:visited{
-    color: #edf0f1 !important;
+    color: black !important;
     text-decoration: none !important;
 }
 
@@ -113,7 +113,7 @@ a{
 .nav__links li a{
     transition: all 0.2s ease-in 0s;
     text-decoration: none;
-    color: white;
+    color: black;
     opacity: 0.75;
 }
 
@@ -130,7 +130,7 @@ a{
     background-clip: content-box, border-box !important;
     cursor: pointer !important;
     transition: all 0.3s ease 0s;
-    color:#edf0f1 !important;
+    color:black !important;
     text-decoration: none !important;
 }
 
@@ -180,7 +180,7 @@ a{
     filter:none;
     z-index:1;
     font-family: 'open sans';
-    color:whitesmoke;
+    color:black;
     z-index: 0;
 }
 
@@ -274,7 +274,7 @@ a{
 
 #scrolled_navbar{
     position: fixed;
-    background-color:#410AC8;
+    background-color:#A3CEED;
     top: 0%;
     width: 100%;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -391,7 +391,11 @@ a{
     justify-content: space-around;
     padding: 40px 50px 25px 50px;
     font-family: Times;
-    color:#edf0f1;
+    color:#edf0f1 !important;
+}
+
+.footer a{
+    color: white !important;
 }
 
 .OjasCreate{

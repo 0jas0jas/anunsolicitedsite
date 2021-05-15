@@ -78,3 +78,7 @@ openMenu.addEventListener('click', function(){
 crossBtn.addEventListener('click', function(){
   $('.phones').css("display", "none");
 })
+
+$(document).ready(function(){
+  $(".frontimage").ripples({resolution: 256, perturbance: 0.05});
+})

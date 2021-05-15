@@ -417,13 +417,16 @@ li, a{
 
 
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
     #navbar{
         display: none;
     }
     .app-text{
         text-align: left;
-        margin-right: 100px;
     }
     .app-text h1{
         font-size: 30px;
@@ -432,7 +435,7 @@ li, a{
         font-size: 14px;
     }
     #fronttext{
-        width: 100%;
+        width: 50%;
     }
     .openMenu{
         display: block;

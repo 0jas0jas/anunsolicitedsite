@@ -587,6 +587,7 @@ a{
     #fronttext{
         text-align: left;
         margin-left: -50px;
+        top: 45%;
     }
     .app-text h1{
         font-size: 30px;

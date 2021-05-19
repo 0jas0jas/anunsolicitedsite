@@ -1,7 +1,6 @@
 //Constants
 const frontimage = document.querySelector(".frontimage")
 const navbar = document.querySelector("#navbar")
-const faders = document.querySelectorAll(".fade-in")
 const sliders = document.querySelectorAll(".slider");
 const footer = document.querySelector(".footer")
 
@@ -42,9 +41,6 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 }, appearOptions)
 
 
-faders.forEach(fader =>{
-  appearOnScroll.observe(fader);
-})
 
 sliders.forEach(slider =>{
   appearOnScroll.observe(slider);
@@ -82,3 +78,4 @@ crossBtn.addEventListener('click', function(){
 $(document).ready(function(){
   $(".frontimage").ripples({resolution: 256, perturbance: 0.05});
 })
+

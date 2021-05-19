@@ -303,11 +303,6 @@ a{
 }
 
 
-.fade-in{
-    opacity: 0;
-    transition: opacity 500ms ease-in;
-}
-
 .fade-in.appear{
     opacity:1;
 }
@@ -635,6 +630,7 @@ a:active{
 }
 
 .websiteProject{
+    z-index: 5;
     display: flex;
     margin-left: 100px;
     flex-wrap: wrap;
@@ -824,7 +820,6 @@ a:active{
     padding: 25px 10px 25px 10px;
     border: black solid 3px;
 }
-
 
 
 @media (max-width: 768px) {

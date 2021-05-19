@@ -3,13 +3,13 @@ const frontimage = document.querySelector(".frontimage")
 const navbar = document.querySelector("#navbar")
 const faders = document.querySelectorAll(".fade-in")
 const sliders = document.querySelectorAll(".slider");
-const footer = document.querySelector(".footer")
+const footer = document.querySelector(".footer-dark")
 
 
 
 //NAVBAR DISAPPEARS
 frontimageObserverOptions = {
-  rootMargin: "-800px 0px 0px 0px"
+  rootMargin: "-800px 0px 0px 0px",
 
 };
  
@@ -23,7 +23,7 @@ const frontimageObserver = new IntersectionObserver(function(enteries, frontimag
   })
 }, frontimageObserverOptions)
 
-
+frontimageObserver.observe(frontimage)
 
 
 //FADE IN STUFF
@@ -66,6 +66,8 @@ const navGone = new IntersectionObserver(function(entries, navGone){
     }
   })
 })
+
+navGone.observe(footer)
 
 
 const openMenu = document.querySelector('.openMenu')

@@ -622,7 +622,10 @@ a {
 @media (max-width: 768px) {
     body{
         overflow-x: hidden;
-        overflow-y: hidden;
+    }
+
+    #scrolled_navbar{
+      display: none;
     }
 
     #navbar{

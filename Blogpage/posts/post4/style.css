@@ -11,7 +11,7 @@
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
-  --bg-body: #151320;
+  --bg-body: #ececec;
   --bg-posts: #1c1b29;
 
 }
@@ -214,9 +214,6 @@ main{
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 20px;
   grid-gap: 40px;
-  width: 75%;
-  height: 75%;
-  padding-bottom: 100px;
 }
 
 .post{
@@ -224,7 +221,7 @@ main{
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
   width: 100%;
-  transition: all 300ms ease 0s; 
+  transition: all 300ms ease 0s;
 }
 
 .post:hover{
@@ -235,11 +232,13 @@ main{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
+.post:hover>.details>h3{
+  font-size: 22px;
+}
 
 .post:hover>.details>p{
   text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-skip-ink: auto;  
+  text-decoration-thickness: 5px;  
 }
 
 .container{
@@ -250,8 +249,6 @@ main{
 
 img{
   width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0;
 }
 
 .container::after{
@@ -275,10 +272,6 @@ img{
 
 .post3>.container::after{
   background-image: linear-gradient(135deg, #ffab1d, #f8501c)
-}
-
-.post4>.container::after{
-  background-image: linear-gradient(135deg, #b67b74, #f84008)
 }
 
 .details{
@@ -334,7 +327,7 @@ img{
 
 .input-text{
   border-radius: 10px;
-  border-style:none;
+  border-style:solid;
   width: 75%;
   height: 4em;
   padding: 10px 10px 10px 20px;
@@ -343,12 +336,12 @@ img{
 .input-button{
   border: 2px solid transparent !important;
   border-radius: 10px !important;
-  background-image: linear-gradient(var(--bg-body), var(--bg-body) ), radial-gradient(circle at top left, #fd00da, #19d7f8) !important;
+  background-image: linear-gradient(var(--bg-body), var(--bg-body) ), radial-gradient(circle at top left, #fd00da, #19d7f8);
   background-origin: border-box !important;
   background-clip: content-box, border-box !important;
   cursor: pointer !important;
   transition: all 0.3s ease 0s;
-  color:#edf0f1 !important;
+  color:black;
   text-decoration: none !important;
   width: 25%;
   height: 3em;
@@ -356,22 +349,85 @@ img{
   left: 155px;
   position: relative;
   z-index: 1;
+  transition: all 300ms ease 0s;
+}
+
+.input-button.clicked{
+  background-image: radial-gradient(circle at top left, #fd00da, #19d7f8) !important;
+  color: white;
+}
+
+
+
+.comments{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+#disqus_thread{
+    width: 80%;
+    align-self: center;
+}
+
+.main{
+    position: relative;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 200px;
+    align-items: center;
+    align-content: center;
+
+}
+
+.main h1{
+  font-weight: 1500;
+}
+
+.main p{
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.main ul{
+  position: relative;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+  left: 10%;
+}
+
+.main h2{
+  font-weight: 700;
+}
+
+.main img{
+  left: 50%;
+  position: relative;
+  margin-left: -50%;
+}
+
+
+.dateName{
+  color: #888;
+  font-size: 13px;
+}
+
+#old-terminal{
+  left: 25%;
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  body{
-    overflow-x: hidden;
-  }
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
     position: fixed;
-  }
-
-  .red-pill{
-    display: none;
   }
 
   .logo {
@@ -387,7 +443,7 @@ img{
   }
 
   main {
-    margin-left: -15%;
+    margin: 0;
   }
 
   .input-button{
@@ -397,30 +453,15 @@ img{
     width: 50%;
 
   }
-  .heading{
-    flex-direction: column;
-    padding-bottom: 150px;
-    padding-top: 150px;
-  }
-  .input-button{
-    z-index: auto;
-  }
-  hr{
-    display: none;
-  }
-  .input-text{
-    width: 100%;
+
+  .main{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
   }
 
-  .post{
-    width: 75%;
-    align-items: center;
-    align-self: center;
-  }
-
-  .posts{
-    padding-bottom: 200px;
-    align-items: center;
+  #old-terminal{
+    margin-left: -10%;
   }
 }
 
@@ -430,7 +471,6 @@ img{
     top: 0;
     width: 5rem;
     height: 100vh;
-  
   }
 
   .navbar:hover {

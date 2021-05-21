@@ -2,7 +2,7 @@
 const frontimage = document.querySelector(".frontimage")
 const navbar = document.querySelector("#navbar")
 const sliders = document.querySelectorAll(".slider");
-const footer = document.querySelector(".footer")
+const footer = document.querySelector(".footer-dark")
 
 //NAVBAR DISAPPEARS
 frontimageObserverOptions = {

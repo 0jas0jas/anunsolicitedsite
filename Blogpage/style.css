@@ -281,6 +281,10 @@ img{
   background-image: linear-gradient(135deg, #b67b74, #f84008)
 }
 
+.post5>.container::after{
+  background-image: linear-gradient(135deg, #74b674, #08f828)
+}
+
 .details{
   padding: 20px 10px;
 }

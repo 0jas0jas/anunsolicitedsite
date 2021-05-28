@@ -18,25 +18,26 @@
 
 /* unvisited link */
 a:link {
-  color: none;
+  color: #03a1fc;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: none;
+  color: #03a1fc;
   text-decoration: none;
+  color: #03a1fc;
 }
 
 /* mouse over link */
 a:hover {
-  color: none;
+  color: #03a1fc;
   text-decoration: none;
 }
 
 /* selected link */
 a:active {
-  color: none;
+  color: #03a1fc;
   text-decoration: none;
 }
 
@@ -390,12 +391,20 @@ img{
 .main p{
   font-weight: 400;
   line-height: 30px;
+  font-size: 16px;
+}
+
+.main ul{
+  position: relative;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+  left: 10%;
 }
 
 .main h2{
   font-weight: 700;
 }
-
 
 .main img{
   left: 50%;

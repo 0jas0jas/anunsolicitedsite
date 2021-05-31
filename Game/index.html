@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" onkeydown="myFunction(event)" onclick="jump()">
 <head>
-    
-    <meta charset="UTF-8">
-    <title>An Unsolicited Site || An Unsolicited Game</title>
-    <meta name="description" content="A game you didn't know you needed. Nah actually it was actually quite easy to make. It's fun, nevertheless.">
+    <meta charset="UTF-8" />
+    <title>The Game of Life</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
-<body >
-    <script src="matter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js" integrity="sha512-3CP+e7z5ieYYTIyvRvV3eGVYR67yXg5V2mWfg8pEJJd2mlh8tG/cnDv5scTmRztEYHTksBlpPOmxFOiMtHfZdQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.js" integrity="sha512-TDWaR4Jcfh+czIclPCKBKsZvP3+R8jyYdHSV0bEdi/drluprR/2nx6jCpirVB21A0O86coRGKO033FR2/r4s2g==" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+
+<body>
+    <br><br><br>
+    <h1 style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem;">Conway's The Game Of Life</h1>
+    <br>
+    <div id="gridContainer">
+
+    </div>
+    <div class="controls">
+        <button style="font-family: 'Montserrat', sans-serif; font-size: 32px !important; color: #000;" class="button" id="start"><span>Start</span></button>
+        <button class="button" id="clear"><span>Clear</span></button>
+        <button class="button" id="random"><span>Random</span></button>
+    </div>
+    <p style="line-height: 100px; color: #888; font-size: 18px; ">Design By Daksh Bains</p>
+
+    <script src="code.js"></script>
+
 </body>
-</html>

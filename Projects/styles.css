@@ -622,11 +622,16 @@ a:active{
     flex-wrap: wrap;
 }
 
-.websiteProject h1{
+.websiteProject > h1:nth-child(1){
     font-weight: 1000;
     font-size: 5rem;
     width: 20%;
 }
+
+.gameoflife{
+    width: 40% !important;
+}
+
 
 .websiteProject p{
     margin-left: 10%;
@@ -643,6 +648,10 @@ a:active{
 }
 
 .websiteProject .button{
+    width: 200px;
+    height: 200px;
+}
+.websiteProject .button2{
     width: 200px;
     height: 200px;
 }
@@ -671,7 +680,7 @@ a:active{
     transition: all .3s ease;
 }
 
-.fab{
+.fab, .fas{
     font-size: 70px;
     margin: 15px 0;
 }

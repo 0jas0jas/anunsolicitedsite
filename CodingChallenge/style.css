@@ -3,6 +3,26 @@ body{
     overflow: hidden;
 }
 
+/* unvisited link */
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #ececec;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
 .notStarted{
     background-color: #06A062;
 
@@ -45,8 +65,4 @@ body{
 
     border-radius: 10px;
     border: solid #000 3px;
-}
-
-.text img{
-    m
 }

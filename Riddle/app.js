@@ -7,7 +7,7 @@ function submit()
     console.log(riddle1);
     console.log(riddle2);
     console.log(riddle3);
-    if (riddle1 == "12111" && (riddle2 == "seven" || riddle2 == "7") && riddle3 == "194" )
+    if (riddle1 == "12111" && (riddle2 == "seven" || riddle2 == "Seven" || riddle2 == "7") && riddle3 == "194" )
     {
         console.log("PASSED");
         window.location.href = "https://unsolicitedsite.co.in/riddle/unlocked.html";

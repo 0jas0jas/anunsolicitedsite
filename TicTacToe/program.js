@@ -14,6 +14,7 @@ const b6 = document.getElementsByClassName("b6")[0];
 const b7 = document.getElementsByClassName("b7")[0];
 const b8 = document.getElementsByClassName("b8")[0];
 const b9 = document.getElementsByClassName("b9")[0];
+let winner;
 
 
 // $( document ).ready(function() {
@@ -34,9 +35,11 @@ const b9 = document.getElementsByClassName("b9")[0];
 //     );
 // });
 
-function move(ele){
+function move(ele)
+{
     const clas = ele.className
-    if (turn == 1){
+    if (turn == 1)
+    {
         document.getElementsByClassName(clas)[1].setAttribute("fill", "#EE4B2BFF");
         document.getElementsByClassName(clas)[0].style.pointerEvents = "none";
         document.getElementsByClassName(clas)[0].classList.add("active");
@@ -44,9 +47,12 @@ function move(ele){
 
         cells_active = cells_active + 1
         turn = 0;
-    }else{
+    }
+    else
+    {
         const clas = ele.className
-        if (turn == 0){
+        if (turn == 0)
+        {
             document.getElementsByClassName(clas)[1].setAttribute("fill", "#0096FFFF");
             document.getElementsByClassName(clas)[0].style.pointerEvents = "none";
             document.getElementsByClassName(clas)[0].classList.add("active");
@@ -72,53 +78,108 @@ function game(elem){
     const b8_active = b8.classList.contains("active");
     const b9_active = b9.classList.contains("active");
 
-    if(b1_active == true && b2_active == true && b3_active == true){
-        if (turn == 1){
+    if(b1_active == true && b2_active == true && b3_active == true)
+    {
+        if (turn == 1)
+        {
             console.log("RED WINSSSS");
-        }else{
-            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
         }
-    }else if(b4_active == true && b5_active == true && b6_active == true){
-        if (turn == 1){
-            console.log("RED WINSSSS");
-        }else{
+        else
+        {
             console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
         }
-    }else if(b7_active == true && b8_active == true && b9_active == true){
-        if (turn == 1){
+    }
+    else if(b4_active == true && b5_active == true && b6_active == true)
+    {
+        if (turn == 1)
+        {
             console.log("RED WINSSSS");
-        }else{
-            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
         }
-    }else if(b1_active == true && b4_active == true && b7_active == true){
-        if (turn == 1){
-            console.log("RED WINSSSS");
-        }else{
+        else
+        {
             console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
         }
-    }else if(b2_active == true && b5_active == true && b8_active == true){
-        if (turn == 1){
+    }
+    else if(b7_active == true && b8_active == true && b9_active == true)
+    {
+        if (turn == 1)
+        {
             console.log("RED WINSSSS");
-        }else{
-            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
         }
-    }else if(b3_active == true && b6_active == true && b9_active == true){
-        if (turn == 1){
-            console.log("RED WINSSSS");
-        }else{
+        else
+        {
             console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
         }
-    }else if(b3_active == true && b5_active == true && b7_active == true){
-        if (turn == 1){
+    }
+    else if(b1_active == true && b4_active == true && b7_active == true)
+    {
+        if (turn == 1)
+        {
             console.log("RED WINSSSS");
-        }else{
-            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
         }
-    }else if(b1_active == true && b5_active == true && b9_active == true){
-        if (turn == 1){
-            console.log("RED WINSSSS");
-        }else{
+        else
+        {
             console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
+        }
+    }
+    else if(b2_active == true && b5_active == true && b8_active == true)
+    {
+        if (turn == 1)
+        {
+            console.log("RED WINSSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
+        }
+        else
+        {
+            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
+        }
+    }
+    else if(b3_active == true && b6_active == true && b9_active == true)
+    {
+        if (turn == 1)
+        {
+            console.log("RED WINSSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
+        }
+        else
+        {
+            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
+        }
+    }
+    else if(b3_active == true && b5_active == true && b7_active == true)
+    {
+        if (turn == 1)
+        {
+            console.log("RED WINSSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
+        }
+        else
+        {
+            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
+        }
+    }
+    else if(b1_active == true && b5_active == true && b9_active == true)
+    {
+        if (turn == 1)
+        {
+            console.log("RED WINSSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/red.html";
+        }
+        else
+        {
+            console.log("BLUE WINNSSS");
+            window.location.href = "https://tic-tac-toe.0jas0jas.repl.co/Winner/blue.html";
         }
     }
 }

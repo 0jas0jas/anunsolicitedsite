@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.container{
+    font-family: Fira code;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: grid;
+    grid-auto-rows:25% ;
+    background: #5644ce;
+}
+
+.container h2{
+    padding-top: 200px;
+    color:#facccd;
+}
+
+.potato1{
+  position: absolute;
+  top: 432px;
+  left:674px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato2{
+  position: absolute;
+  top: 675px;
+  left:1784px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato3{
+  position: absolute;
+  top: 342px;
+  left:1227px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato4{
+  position: absolute;
+  top: 500px;
+  left:90px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}

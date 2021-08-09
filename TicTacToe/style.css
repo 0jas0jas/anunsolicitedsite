@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
     background-color: #2C2C32;
@@ -10,7 +10,7 @@ body {
 
     width: 100%;
 
-    color: #ececec;
+    color: #ececec !important;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -21,6 +21,10 @@ body {
     text-align: center;
 }
 
+.text>li{
+  color: #ececec !important;
+}
+
 .text>h1 {
     text-align: center;
 }
@@ -29,10 +33,9 @@ body {
     width: 600px;
     height: 600px;
 
-    position: absolute;
-    top: 60%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -300px;
 
     border: 3px solid #ececec;
     border-radius: 15px;
@@ -56,6 +59,10 @@ body {
     transition: all 0.5s ease;
 }
 
+.Gaming_area>div:hover{
+  background-color: #FFFFFFDD;
+}
+
 .end {
     position: absolute !important;
     width: 100% !important;
@@ -70,4 +77,138 @@ body {
 .end-text {
     vertical-align: middle;
     text-align: center;
+}
+
+
+
+
+.potato
+{
+  position: absolute;
+  top: 876px;
+  left:873px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato1
+{
+  position: absolute;
+  top: 200px;
+  left:133px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato2
+{
+  position: absolute;
+  top: 432px;
+  left:234px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato3
+{
+  position: absolute;
+  top: 342px;
+  left:1784px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato4
+{
+  position: absolute;
+  top: 800px;
+  left:1445px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+header{
+    top: 0%;
+    width: 100wh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    background-color: #B9B9BB;
+}
+
+/* li:nth-child(1) , a:nth-child(1){
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+} */
+
+
+.logo{
+    cursor: pointer;
+    color: black;
+    font-size: 25px;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__links {
+    list-style: none;
+    margin-top: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.nav__links li {
+    display:inline-block;
+    padding: 0 20px;
+
+}
+
+.nav__links li a{
+    transition: all 0.2s ease-in 0s;
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+}
+
+.nav__links li a:hover{
+    opacity: 1;
+    font-size:18px
+}
+
+.aboutbtn{
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+    background-image:radial-gradient(circle at top left, #fd00da, #19d7f8) !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease 0s;
+    color:#edf0f1 !important;
+    text-decoration: none !important;
+}
+
+.aboutbtn span{
+    display: block;
+    padding: 8px 22px;
+}
+
+.about{
+    border-radius: 50px;
+}
+
+.aboutbtn:hover {
+
+    background-color: rgba(0, 117, 146, 0.8);
+
 }

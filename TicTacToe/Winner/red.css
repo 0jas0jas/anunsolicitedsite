@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero
+{
+  width: 100%;
+  background-color: #f37777;
+  height: 100vh;
+  background: url('./1.png');
+  background-size: cover;
+  z-index: -10;
+}
+.hero h1
+{
+  font-family: Inconsolata;
+}
+
+
+.potato
+{
+  position: absolute;
+  top: 500px;
+  left:90px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato1
+{
+  position: absolute;
+  top: 55px;
+  left:480px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+.potato2
+{
+  position: absolute;
+  top: 780px;
+  left:1560px;
+  transform: scale(400%);
+  width: 200px;
+  height:200px ;
+}
+
+button{
+  width: 200px;
+  height: 50px;
+  border: none #000;
+  font-size: 20px;
+  background-color: #fff;
+  transition: all 0.6s ease;
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+button:hover{
+  background-color: #000;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
+}
+
+.btn{
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 12px 32px;
+  transition: all 0.6s ease;
+}
+
+.btn:hover{
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 12px 32px;
+}

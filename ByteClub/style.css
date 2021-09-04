@@ -119,7 +119,6 @@ a:active {
 .aboutDiv {
   padding: 50px 100px 50px 100px;
   width: 100%;
-  height: 80vh;
   background-color: #fdf8f7;
 }
 
@@ -149,7 +148,7 @@ a:active {
   height: 300px;
   position: absolute;
   left: 70%;
-  top: 125%;
+  top: 135%;
   border-radius: 50%;
 }
 

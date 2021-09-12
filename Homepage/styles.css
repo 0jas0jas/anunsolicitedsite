@@ -761,7 +761,11 @@ a {
   min-height: 50vh;
   grid-template-columns: repeat(4, 125px);
   grid-template-rows: minmax(120px, auto) repeat(5, 125px);
-  
+  width: 500px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .calculator > button{

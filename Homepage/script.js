@@ -203,3 +203,133 @@ function setWindowSize() {
 let m = runMatter();
 setWindowSize();
 $(window).resize(debounce(setWindowSize, 250));
+
+
+//CALCULATOR EVERYTHING
+
+class calculator{
+  constructor(previousElement, currentElement){
+    this.previousElement = previousElement
+    this.currentElement = currentElement
+    this.clear()
+  }
+
+  clear(){
+    this.current = ''
+    this.previous = ''
+    this.operation = undefined
+  }
+
+  delete(){
+    this.current = this.current.toString().slice(0, -1)
+  }
+
+  appendNumber(number){
+    if (number === "." && this.current.includes('.')) return 
+    this.current = this.current.toString() + number.toString()
+  }
+
+  chooseOperation(operation){
+    if (this.current === '') return
+    if (this.previous !== '') {
+      this.compute()
+    }
+    this.operation = operation
+    this.previous = this.current
+    this.current = ''
+  }
+
+  compute(){
+    let computation
+    const prev = parseFloat(this.previous)
+    const curr = parseFloat(this.current)
+    if (isNaN(prev) || isNaN(curr)) return
+    switch (this.operation){
+      case '➕': 
+        computation = prev + curr
+        break
+      case '➖':
+        computation = prev - curr
+        break
+      case '❌':
+        computation = prev * curr
+        break
+      case '➗':
+        if (curr === 0){
+          window.open("https://0jas0jas.github.io/RiskOfRain/yt.html); 
+        }
+        computation = prev / curr
+      default:
+        return
+    }
+    this.current = computation
+    this.operation = undefined
+    this.previous = ''
+  }
+
+  getDisplayNumber(number){
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+    }
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
+  }
+
+  updateDisplay(){
+    this.currentElement.innerText = this.getDisplayNumber(this.current)
+    if (this.operation != null){
+      this.previousElement.innerText = 
+      `${this.getDisplayNumber(this.previous)} ${this.operation}`
+    }else{
+      this.previousElement.innerText = ''
+    }
+  }
+}
+
+const numberButtons = document.querySelectorAll('[data-number]');
+const operationButtons = document.querySelectorAll('[data-operation]');
+const equalButton = document.querySelector('[data-equal]');
+const deleteButton = document.querySelector('[data-delete');
+const previousElement = document.querySelector('[data-previous]');
+const currentElement = document.querySelector('[data-current]');
+const allClearButton = document.querySelector('[data-all-clear]');
+
+const Calculator = new calculator(previousElement, currentElement)
+
+numberButtons.forEach(button => {
+  button.addEventListener('click', () =>{
+    Calculator.appendNumber(button.innerText)
+    Calculator.updateDisplay()
+  })
+})
+
+operationButtons.forEach(button => {
+  button.addEventListener('click', () =>{
+    Calculator.chooseOperation(button.innerText)
+    Calculator.updateDisplay()
+  })
+})
+
+equalButton.addEventListener('click', button =>{
+  Calculator.compute()
+  Calculator.updateDisplay()
+})
+
+allClearButton.addEventListener('click', button =>{
+  Calculator.clear()
+  Calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button =>{
+  Calculator.delete()
+  Calculator.updateDisplay()
+})

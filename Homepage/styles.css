@@ -761,6 +761,7 @@ a {
   min-height: 50vh;
   grid-template-columns: repeat(4, 125px);
   grid-template-rows: minmax(120px, auto) repeat(5, 125px);
+  
 }
 
 .calculator > button{
@@ -770,6 +771,7 @@ a {
   outline: none;
   background-color: #FFFFFFB4;
   transition: all 0.3s linear;
+  
 }
 
 .calculator > button:hover{

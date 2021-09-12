@@ -1,3 +1,5 @@
+console.log("JS here!")
+
 var canvas = $('.frontimage').get(0);
 
 var dimensions = {
@@ -256,7 +258,7 @@ class calculator{
         break
       case '➗':
         if (curr === 0){
-          window.open("https://0jas0jas.github.io/RiskOfRain/yt.html); 
+          window.open("https://0jas0jas.github.io/RiskOfRain/yt.html"); 
         }
         computation = prev / curr
       default:
